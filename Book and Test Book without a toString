@@ -1,0 +1,71 @@
+
+public class kakishk_Book {
+	private String Title;
+	private int ISBN;
+	private String Author;
+	private double Price;
+
+	public kakishk_Book() {
+		Title = "";
+		ISBN = 0;
+		Author = "";
+		Price = 0.0;
+	}
+
+	public kakishk_Book(String first, int num, String pers, double cost) {
+		Title = first;
+		ISBN = num;
+		Author = pers;
+		Price = cost;
+	}
+
+	public String getTitle() {
+		return Title;
+	}
+
+	public int getISBN() {
+		return ISBN;
+	}
+
+	public String getAuthor() {
+		return Author;
+	}
+
+	public double getPrice() {
+		return Price;
+	}
+
+	public void setTitle(String newTitle) {
+		Title = newTitle;
+	}
+
+	public void setISBN(int newISBN) {
+		ISBN = newISBN;
+	}
+
+	public void setAuthor(String newAuthor) {
+		Author = newAuthor;
+	}
+
+	public void setPrice(double newPrice) {
+		Price = newPrice;
+	}
+  }
+  
+  public class kakishk_TestBook {
+
+public static void main(String[] args) {
+
+	kakishk_Book prod1 = new kakishk_Book("On Tyranny", 673262257, "Timothy Snyder", 49.99);
+
+	System.out.println(prod1.getTitle() + " " + prod1.getISBN() + " " + prod1.getAuthor() + " " + prod1.getPrice());
+	System.out.println();
+
+	prod1.setTitle("The Da Vinci Code");
+	prod1.setISBN(989787767);
+	prod1.setAuthor("Dan Brown");
+	prod1.setPrice(99.99);
+	System.out.println(prod1.getTitle() + " " + prod1.getISBN() + " " + prod1.getAuthor() + " " + prod1.getPrice());
+
+}
+}
